@@ -466,7 +466,7 @@ function Documentos({ onTotalChange }) {
         </ul>
 </div>
     </div>
-}
+})
 
 function Cenarios({ cenarios, onRemove }) {
   if (cenarios.length === 0) {
