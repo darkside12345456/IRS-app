@@ -464,11 +464,8 @@ function Documentos({ onTotalChange }) {
           ))}
           {despesas.length === 0 && <li className="empty">Sem registos.</li>}
         </ul>
-      </div>
-    </div>
 </div>
     </div>
-  );
 }
 
 function Cenarios({ cenarios, onRemove }) {
