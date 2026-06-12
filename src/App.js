@@ -399,8 +399,7 @@ function Documentos({ onTotalChange }) {
           <select className="field" value={form.categoria} onChange={(e) => setForm((f) => ({ ...f, categoria: e.target.value }))}>
             {Object.entries(CATEGORIAS_DESPESA).map(([k, c]) => <option key={k} value={k}>{c.label}</option>)}
           </select>
-
-          <label className="field-label">
+<label className="field-label">
 <input className="field field-mono" type="date" value={form.data} onChange={(e) => setForm((f) => ({ ...f, data: e.target.value }))} />
 
           <label className="field-label">Valor</label>
@@ -409,6 +408,7 @@ function Documentos({ onTotalChange }) {
             <input className="field field-mono" type="number" min="0" step="0.01" required placeholder="0.00"
               value={form.valor} onChange={(e) => setForm((f) => ({ ...f, valor: e.target.value }))} />
           </div>
+          
 
           <p className="field-hint" style={{ marginTop: -6 }}>{CATEGORIAS_DESPESA[form.categoria].descricao}</p>
 
